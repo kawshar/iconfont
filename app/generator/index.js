@@ -101,7 +101,7 @@ router.post('/get_session', function(req, res, next) {
 })
 
 /**
- * Generate icofonts.json from main icons.json for view
+ * Generate iconfont.json from main icons.json for view
  * It will generate new package for newly added svg icon which contain css and fonts files
  * Move package folder to the public css and a zip version to the global_download folder for all users
  */

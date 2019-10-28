@@ -11,7 +11,7 @@ const Package = {
 		const rootPath = path.resolve('.')
         const configPath = rootPath + '/config';
         const fontDir = rootPath + '/packages'
-		const jsonWritePath = fontDir + '/icofonts.json'
+		const jsonWritePath = fontDir + '/iconfonts.json'
 		
 		if (!fs.existsSync(fontDir)) {
 			res.status(403).end()

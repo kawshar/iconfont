@@ -26,7 +26,6 @@ npm run build
 It will generate font package folder into ```public``` directory
 
 ## Exceptional Case 
-----------
 Build only ico-config json file command
 
 ```
@@ -38,7 +37,6 @@ Build only icon json data and package
 npm run build_font
 ```
 ## Copyright
-----------------
 
 Copyright (c) 2019 [Kawshar Ahmed](https://github.com/kawshar/) 
 

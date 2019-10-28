@@ -19,20 +19,15 @@ const FsEngine = {
 		if (force === true) {
 			module.exports.clearTrashCan()
 			module.exports.createDownloadFolder()
-			module.exports.createIcoFontFolders()
+			module.exports.createIconFontFolders()
 			return module.exports
 		}
 	},
 	createDownloadFolder: () => {
-		// module.exports.userFolder = path.join(
-		// 	module.exports.publicPath,
-		// 	module.exports.srcPath,
-		// 	module.exports.uid
-		// )
 		module.exports.userFolder = path.join(module.exports.publicPath)
 		shell.mkdir('-p', module.exports.userFolder)
 	},
-	createIcoFontFolders: () => {
+	createIconFontFolders: () => {
 		
 		module.exports.fontsFolder = path.join(
 			module.exports.userFolder,
@@ -52,7 +47,7 @@ const FsEngine = {
 	/**
 	 *
 	 * Zip downloadable folders (css, fonts, js, scss )
-	 * Make a new folder with zip extension (icofont.zip)
+	 * Make a new folder with zip extension (iconfont.zip)
 	 * **/
 
 	zipDir: () => {
@@ -71,7 +66,7 @@ const FsEngine = {
 	},
 
 	/*
-	 * Move new generated icofont folder to the assets folder 
+	 * Move new generated iconfont folder to the assets folder 
 	 * Make a zip file and move it to the package download folder
 	 */
 
